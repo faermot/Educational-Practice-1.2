@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp20.Utils
 {
-    public class Task4 : PrintOfSolution
+    public class Task4 : IPrintOfSolution
     {
         double D, a, t;
 

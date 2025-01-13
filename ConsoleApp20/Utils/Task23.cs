@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp20.Utils
 {
-    public class Task6 : IPrintOfSolution
+    public class Task23 : IPrintOfSolution
     {
-        double M, y, e, x;
+        double G, e, f, y;
 
-        public Task6(double y, double e, double x)
+        public Task23(double e, double f, double y)
         {
-            this.y = y;
             this.e = e;
-            this.x = x;
+            this.f = f;
+            this.y = y;
         }
 
         public void PrintSolution()
         {
-            M = Math.Cos(2 * y) + 3.6 * Math.Pow(e, x);
+            G = Math.Pow(e, 2 * y) + Math.Sin(f);
 
-            Console.WriteLine($"M = {M}");
+            Console.WriteLine($"G = {G}");
         }
     }
 }

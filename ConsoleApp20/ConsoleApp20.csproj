@@ -45,14 +45,37 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utils\PrintOfSolution.cs" />
+    <Compile Include="Utils\IPrintOfSolution.cs" />
+    <Compile Include="Utils\Task10.cs" />
+    <Compile Include="Utils\Task11.cs" />
+    <Compile Include="Utils\Task12.cs" />
+    <Compile Include="Utils\Task13.cs" />
+    <Compile Include="Utils\Task14.cs" />
+    <Compile Include="Utils\Task15.cs" />
+    <Compile Include="Utils\Task16.cs" />
+    <Compile Include="Utils\Task17.cs" />
+    <Compile Include="Utils\Task18.cs" />
+    <Compile Include="Utils\Task19.cs" />
+    <Compile Include="Utils\Task20.cs" />
+    <Compile Include="Utils\Task21.cs" />
+    <Compile Include="Utils\Task22.cs" />
+    <Compile Include="Utils\Task23.cs" />
+    <Compile Include="Utils\Task24.cs" />
+    <Compile Include="Utils\Task25.cs" />
+    <Compile Include="Utils\Task26.cs" />
+    <Compile Include="Utils\Task27.cs" />
+    <Compile Include="Utils\Task28.cs" />
+    <Compile Include="Utils\Task29.cs" />
     <Compile Include="Utils\Task3.cs" />
     <Compile Include="Utils\Task2.cs" />
     <Compile Include="Utils\Task1.cs" />
+    <Compile Include="Utils\Task30.cs" />
     <Compile Include="Utils\Task4.cs" />
     <Compile Include="Utils\Task5.cs" />
     <Compile Include="Utils\Task6.cs" />
     <Compile Include="Utils\Task7.cs" />
+    <Compile Include="Utils\Task8.cs" />
+    <Compile Include="Utils\Task9.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -44,7 +44,7 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №2");
 
-                            double K, p, y, e;
+                            double p, y, e;
 
                             Console.Write("Введите значение - p: ");
                             p = Convert.ToDouble(Console.ReadLine());
@@ -68,7 +68,7 @@ namespace ConsoleApp20
                             Console.WriteLine("Задание №3");
 
 
-                            double G, n, y;
+                            double n, y;
 
                             Console.Write("Введите значение - n: ");
                             n = Convert.ToDouble(Console.ReadLine());
@@ -90,7 +90,7 @@ namespace ConsoleApp20
                             Console.WriteLine("Задание №4");
 
 
-                            double D, a, t;
+                            double a, t;
 
                             Console.Write("Введите значение - a: ");
                             a = Convert.ToDouble(Console.ReadLine());
@@ -112,7 +112,7 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №5");
 
-                            double L, x;
+                            double  x;
 
                             Console.Write("Введите значение - x: ");
                             x = Convert.ToDouble(Console.ReadLine());
@@ -130,8 +130,7 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №6");
 
-                            double M, y, e, x;
-
+                            double y, e, x;
 
                             Console.Write("Введите значение - y: ");
                             y = Convert.ToDouble(Console.ReadLine());
@@ -155,7 +154,7 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №7");
 
-                            double N, m;
+                            double m;
 
                             Console.Write("Введите значение - m: ");
                             m = Convert.ToDouble(Console.ReadLine());
@@ -172,14 +171,13 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №8");
 
-                            double T, y;
+                            double y;
 
                             Console.Write("Введите значение - y: ");
                             y = Convert.ToDouble(Console.ReadLine());
 
-                            T = Math.Sqrt(Math.Abs(6 * Math.Pow(y, 2) - 0.1 * y + 4));
-
-                            Console.WriteLine($"T = {T}");
+                            Task8 task8 = new Task8(y);
+                            task8.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -190,7 +188,7 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №9");
 
-                            double V, y, x;
+                            double y, x;
 
 
                             Console.Write("Введите значение - y: ");
@@ -200,9 +198,8 @@ namespace ConsoleApp20
                             Console.Write("Введите значение - x: ");
                             x = Convert.ToDouble(Console.ReadLine());
 
-                            V = Math.Log(y + 0.95) + Math.Sin(Math.Pow(x, 4));
-
-                            Console.WriteLine($"V = {V}");
+                            Task9 task9 = new Task9(y, x);
+                            task9.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -213,7 +210,7 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №10");
 
-                            double U, e, x, k, y;
+                            double e, x, k, y;
 
                             Console.Write("Введите значение - e: ");
                             e = Convert.ToDouble(Console.ReadLine());
@@ -227,9 +224,8 @@ namespace ConsoleApp20
                             Console.Write("Введите значение - y: ");
                             y = Convert.ToDouble(Console.ReadLine());
 
-                            U = Math.Pow(e, y) + 7.355 * Math.Pow(k, 2) * Math.Sin(Math.Pow(x, 2));
-
-                            Console.WriteLine($"U = {U}");
+                            Task10 task10 = new Task10(e, x, k, y);
+                            task10.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -240,7 +236,7 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №11");
 
-                            double S, y, x;
+                            double y, x;
 
                             Console.Write("Введите значение - y: ");
                             y = Convert.ToDouble(Console.ReadLine());
@@ -248,10 +244,8 @@ namespace ConsoleApp20
                             Console.Write("Введите значение - x: ");
                             x = Convert.ToDouble(Console.ReadLine());
 
-                            S = 9.756 * Math.Pow(y, 7) + 2 * Math.Tan(x);
-
-
-                            Console.WriteLine($"S = {S}");
+                            Task11 task11 = new Task11(y, x);
+                            task11.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -262,7 +256,7 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №12");
 
-                            double K, t, x;
+                            double t, x;
 
 
                             Console.Write("Введите значение - t: ");
@@ -271,9 +265,8 @@ namespace ConsoleApp20
                             Console.Write("Введите значение - x: ");
                             x = Convert.ToDouble(Console.ReadLine());
 
-                            K = 7 * Math.Pow(t, 2) + 3 * Math.Sin(Math.Pow(x, 3)) + 9.2;
-
-                            Console.WriteLine($"K = {K}");
+                            Task12 task12 = new Task12(t, x);
+                            task12.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -284,14 +277,13 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №13");
 
-                            double E, y;
+                            double y;
 
                             Console.Write("Введите значение - y: ");
                             y = Convert.ToDouble(Console.ReadLine());
 
-                            E = Math.Sqrt(Math.Abs(3 * Math.Pow(y, 3) + 0.5 * y + 4));
-
-                            Console.WriteLine($"E = {E}");
+                            Task13 task13 = new Task13(y);
+                            task13.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -302,7 +294,7 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №14");
 
-                            double R, y, e, x;
+                            double y, e, x;
 
 
                             Console.Write("Введите значение - y: ");
@@ -314,9 +306,8 @@ namespace ConsoleApp20
                             Console.Write("Введите значение - x: ");
                             x = Convert.ToDouble(Console.ReadLine());
 
-                            R = Math.Abs(Math.Sqrt(Math.Pow(Math.Sin(y), 2) + Math.Pow(e, x)));
-
-                            Console.WriteLine($"R = {R}");
+                            Task14 task14 = new Task14(y, e, x);
+                            task14.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -327,14 +318,13 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №15");
 
-                            double H, y;
+                            double y;
 
                             Console.Write("Введите значение - y: ");
                             y = Convert.ToDouble(Console.ReadLine());
 
-                            H = Math.Sin(Math.Pow(y, 2)) - 2.8 * y + Math.Sqrt(Math.Abs(y));
-
-                            Console.WriteLine($"H = {H}");
+                            Task15 task15 = new Task15(y);
+                            task15.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -345,14 +335,13 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №16");
 
-                            double S, y;
+                            double y;
 
                             Console.Write("Введите значение - y: ");
                             y = Convert.ToDouble(Console.ReadLine());
 
-                            S = Math.Sqrt(Math.Cos(4 * Math.Pow(y, 2))) + 7.151;
-
-                            Console.WriteLine($"S = {S}");
+                            Task16 task16 = new Task16(y);
+                            task16.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -363,14 +352,13 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №17");
 
-                            double N, y;
+                            double y;
 
                             Console.Write("Введите значение - y: ");
                             y = Convert.ToDouble(Console.ReadLine());
 
-                            N = 3 * Math.Pow(y, 2) + Math.Sqrt(y + 1);
-
-                            Console.WriteLine($"N = {N}");
+                            Task17 task17 = new Task17(y);
+                            task17.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -381,14 +369,13 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №18");
 
-                            double N, y;
+                            double y;
 
                             Console.Write("Введите значение - y: ");
                             y = Convert.ToDouble(Console.ReadLine());
 
-                            N = 3 * Math.Pow(y, 2) + Math.Sqrt(Math.Pow(y, 3) + 1);
-
-                            Console.WriteLine($"N = {N}");
+                            Task18 task18 = new Task18(y);
+                            task18.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -399,7 +386,7 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №19");
 
-                            double P, n, y, g;
+                            double n, y, g;
 
                             Console.Write("Введите значение - n: ");
                             n = Convert.ToDouble(Console.ReadLine());
@@ -410,10 +397,8 @@ namespace ConsoleApp20
                             Console.Write("Введите значение - g: ");
                             g = Convert.ToDouble(Console.ReadLine());
 
-                            P = n * Math.Sqrt(Math.Pow(y, 3) + 1.09 * g);
-
-
-                            Console.WriteLine($"P = {P}");
+                            Task19 task19 = new Task19(n, y, g);
+                            task19.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -424,7 +409,7 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №20");
 
-                            double U, e, k, y, x;
+                            double e, k, y, x;
 
                             Console.Write("Введите значение - e: ");
                             e = Convert.ToDouble(Console.ReadLine());
@@ -438,9 +423,8 @@ namespace ConsoleApp20
                             Console.Write("Введите значение - x: ");
                             x = Convert.ToDouble(Console.ReadLine());
 
-                            U = Math.Pow(e, (k + y)) + Math.Tan(x * Math.Sqrt(y));
-
-                            Console.WriteLine($"U = {U}");
+                            Task20 task20 = new Task20(e, k, y, x);
+                            task20.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -451,7 +435,7 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №21");
 
-                            double P, e, y, h;
+                            double e, y, h;
 
 
                             Console.Write("Введите значение - e: ");
@@ -463,9 +447,8 @@ namespace ConsoleApp20
                             Console.Write("Введите значение - h: ");
                             h = Convert.ToDouble(Console.ReadLine());
 
-                            P = Math.Pow(e, (y + 5.5)) + 9.1 * Math.Pow(h, 3);
-
-                            Console.WriteLine($"P = {P}");
+                            Task21 task21 = new Task21(e, y, h);
+                            task21.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -476,7 +459,7 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №22");
 
-                            double T, u, y, x;
+                            double u, y, x;
 
                             Console.Write("Введите значение - u: ");
                             u = Convert.ToDouble(Console.ReadLine());
@@ -487,10 +470,8 @@ namespace ConsoleApp20
                             Console.Write("Введите значение - x: ");
                             x = Convert.ToDouble(Console.ReadLine());
 
-
-                            T = Math.Sin(2 * u) * Math.Log(2 * Math.Pow(y, 2) + Math.Sqrt(x));
-
-                            Console.WriteLine($"T = {T}");
+                            Task22 task22 = new Task22(u, y, x);
+                            task22.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -501,7 +482,7 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №23");
 
-                            double G, e, f, y;
+                            double e, f, y;
 
                             Console.Write("Введите значение - e: ");
                             e = Convert.ToDouble(Console.ReadLine());
@@ -512,9 +493,8 @@ namespace ConsoleApp20
                             Console.Write("Введите значение - y: ");
                             y = Convert.ToDouble(Console.ReadLine());
 
-                            G = Math.Pow(e, 2 * y) + Math.Sin(f);
-
-                            Console.WriteLine($"G = {G}");
+                            Task23 task23 = new Task23(e, f, y);
+                            task23.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -525,14 +505,13 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №24");
 
-                            double F, y;
+                            double y;
 
                             Console.Write("Введите значение - y: ");
                             y = Convert.ToDouble(Console.ReadLine());
 
-                            F = 2 * Math.Sin(0.214 * Math.Pow(y, 5)) + 1;
-
-                            Console.WriteLine($"F = {F}");
+                            Task24 task24 = new Task24(y);
+                            task24.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -543,7 +522,7 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №25");
 
-                            double G, e, y, f;
+                            double e, y, f;
 
                             Console.Write("Введите значение - e: ");
                             e = Convert.ToDouble(Console.ReadLine());
@@ -554,9 +533,8 @@ namespace ConsoleApp20
                             Console.Write("Введите значение - f: ");
                             f = Convert.ToDouble(Console.ReadLine());
 
-                            G = e * Math.Pow(2, y) + Math.Sin(Math.Pow(f, 2));
-
-                            Console.WriteLine($"G = {G}");
+                            Task25 task25 = new Task25(e, y, f);
+                            task25.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -567,14 +545,13 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №26");
 
-                            double Z, p;
+                            double p;
 
                             Console.Write("Введите значение - p: ");
                             p = Convert.ToDouble(Console.ReadLine());
 
-                            Z = Math.Pow(Math.Sin(Math.Pow(p, 2) + 0.4), 3);
-
-                            Console.WriteLine($"Z = {Z}");
+                            Task26 task26 = new Task26(p);
+                            task26.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -585,7 +562,7 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №27");
 
-                            double W, v, e, y, x;
+                            double v, e, y, x;
 
                             Console.Write("Введите значение - v: ");
                             v = Convert.ToDouble(Console.ReadLine());
@@ -599,9 +576,8 @@ namespace ConsoleApp20
                             Console.Write("Введите значение - x: ");
                             x = Convert.ToDouble(Console.ReadLine());
 
-                            W = 1.03 * v + Math.Pow(e, 2 * y) + Math.Tan(Math.Abs(x));
-
-                            Console.WriteLine($"W = {W}");
+                            Task27 task27 = new Task27(v, e, y, x);
+                            task27.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -612,7 +588,7 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №28");
 
-                            double T, e, y, h;
+                            double e, y, h;
 
                             Console.Write("Введите значение - e: ");
                             e = Convert.ToDouble(Console.ReadLine());
@@ -623,11 +599,8 @@ namespace ConsoleApp20
                             Console.Write("Введите значение - h: ");
                             h = Convert.ToDouble(Console.ReadLine());
 
-                            T = Math.Pow(e, y + h) + Math.Sqrt(Math.Abs(y * 6.4));
-
-                            Console.WriteLine($"T = {T}");
-
-
+                            Task28 task28 = new Task28(e, y, h);
+                            task28.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -638,16 +611,13 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №29");
 
-                            double N, y;
+                            double y;
 
                             Console.Write("Введите значение - y: ");
                             y = Convert.ToDouble(Console.ReadLine());
 
-                            N = 3 * Math.Pow(y, 2) + Math.Sqrt(Math.Abs(y + 1));
-
-                            Console.WriteLine($"N = {N}");
-
-
+                            Task29 task29 = new Task29(y);
+                            task29.PrintSolution();
 
                             Console.ReadKey();
                         }
@@ -658,7 +628,7 @@ namespace ConsoleApp20
                             Console.Clear();
                             Console.WriteLine("Задание №30");
 
-                            double W, e, y, r;
+                            double e, y, r;
 
                             Console.Write("Введите значение - e: ");
                             e = Convert.ToDouble(Console.ReadLine());
@@ -669,9 +639,8 @@ namespace ConsoleApp20
                             Console.Write("Введите значение - r: ");
                             r = Convert.ToDouble(Console.ReadLine());
 
-                            W = Math.Pow(e, y + r) + 7.2 * Math.Sin(r);
-
-                            Console.WriteLine($"W = {W}");
+                            Task30 task30 = new Task30(e, y, r);
+                            task30.PrintSolution();
 
                             Console.ReadKey();
                         }

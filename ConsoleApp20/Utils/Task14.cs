@@ -6,19 +6,20 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp20.Utils
 {
-    public class Task1 : IPrintOfSolution
+    public class Task14 : IPrintOfSolution
     {
-        double R, t, l;
+        double R, y, e, x;
 
-        public Task1(double t, double l)
+        public Task14(double y, double e, double x)
         {
-            this.t = t;
-            this.l = l;
+            this.y = y;
+            this.e = e;
+            this.x = x;
         }
 
         public void PrintSolution()
         {
-            R = 3 * Math.Pow(t, 2) + 3 * Math.Pow(l, 5) + 4.9;
+            R = Math.Abs(Math.Sqrt(Math.Pow(Math.Sin(y), 2) + Math.Pow(e, x)));
 
             Console.WriteLine($"R = {R}");
         }

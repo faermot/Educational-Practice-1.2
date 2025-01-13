@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp20.Utils
 {
-    public interface PrintOfSolution
+    public interface IPrintOfSolution
     {
         void PrintSolution();
     }

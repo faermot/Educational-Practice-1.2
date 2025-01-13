@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp20.Utils
 {
-    public class Task5 : IPrintOfSolution
+    public class Task12 : IPrintOfSolution
     {
-        double L, x;
+        double K, t, x;
 
-        public Task5(double x)
+        public Task12(double t, double x)
         {
+            this.t = t;
             this.x = x;
         }
 
         public void PrintSolution()
         {
-            L = 1.51 * Math.Cos(Math.Pow(x, 2)) + 2 * Math.Pow(x, 3);
+            K = 7 * Math.Pow(t, 2) + 3 * Math.Sin(Math.Pow(x, 3)) + 9.2;
 
-            Console.WriteLine($"L = {L}");
+            Console.WriteLine($"K = {K}");
         }
     }
 }
