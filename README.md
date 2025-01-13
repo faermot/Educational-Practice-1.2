@@ -7,3 +7,4 @@ _(Console & OOP)_
 
  ![image](https://github.com/user-attachments/assets/86921383-c0e9-43c8-9e44-7e6c48e25493)
 
+![ClassDiagram1](https://github.com/user-attachments/assets/3b1eb756-881b-4cc1-b0fb-99d693fcddfe)
